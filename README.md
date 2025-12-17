@@ -1,15 +1,14 @@
-# -Sport-Participation-Club-Performance-Analysis-Power-BI-
-
+🏅 Sport Scotland, Membership & Coaching Analysis (Power BI)
 📌 Project Overview
 
-This project was undertaken as a self-initiated data challenge to strengthen my skills in data analysis, Power BI modelling, and data storytelling within the context of public sector sport and physical activity.
+This project was undertaken as a self-initiated Power BI challenge to deepen my skills in data modelling, DAX calculations, and analytical storytelling using real-world public sector data.
 
-Using publicly available data published by sportscotland, I analysed club membership, participant engagement, and coaching capacity across Scotland over a three-year period. The aim was to understand how participation in sport is changing over time, identify patterns across gender, age group, and geography, and present these insights in a clear, decision-focused dashboard.
+Using publicly available data from the sportscotland website, I analysed how sport participation is changing over time across Scotland, focusing on club members, participants, and coaching capacity. The report highlights year-on-year (YoY) trends, demographic composition, and geographic variation to support evidence-based decision-making.
 
 🎯 Context & Data Source
 
-sportscotland works in partnership with Scottish Governing Bodies (SGBs) to support opportunities for people across Scotland to take part in sport.
-As part of this, data is collected and published on:
+sportscotland works with Scottish Governing Bodies (SGBs) to increase participation in sport across Scotland.
+As part of this, data is published annually covering:
 
 Club membership
 
@@ -17,94 +16,108 @@ Participants (non-members)
 
 Coaches
 
-Local authority coverage
+Local authority distribution
 
-The dataset used in this project was sourced from the sportscotland website and covers three years (2023–2025) for a single Scottish Governing Body.
+This project analyses three years of data (2023–2025) for one governing body.
 
 📊 Dashboard Structure
 
-The Power BI report is structured into three analytical pages, supported by a custom navigation menu built using bookmarks and buttons for a clean, app-like user experience.
+The Power BI report is organised into three analytical pages, supported by a custom navigation menu built using bookmarks and buttons for a professional, app-like experience.
 
-Page 1: Club Members – Year-on-Year Performance
+📈 Page 1: Club Members – Year-on-Year Performance
 
-Purpose: Understand how formal club membership is changing over time.
+![Club Members – Year-on-Year Performance](Club-Members-Page.png)
 
-Key insights:
+This page focuses on how formal club membership has evolved over time, with a strong emphasis on YoY growth, gender balance, youth engagement, and club-level performance.
 
-Total membership increased to 234K, with a 2.01% year-on-year growth
+Key insights include:
 
-Adult members account for 147K, while youth members account for 84K
+Overall membership growth across the three-year period
 
-Female members total 111K and male members 129K
+Differences in growth rates between clubs
 
-Growth patterns vary significantly across clubs, highlighting areas of strong performance and areas that may require targeted support
+Changes in youth and female representation year-on-year
 
-Visuals included:
+Key visuals:
 
-KPI cards (Total members, YoY growth, gender split)
+KPI cards (Total Members, YoY Growth %, Youth %, Female %)
 
 Line chart showing membership trends over time
 
 Stacked bar chart showing adult vs youth and male vs female composition
 
-Club-level growth ranking
+Club ranking bar chart
 
-Club summary matrix with YoY %, Youth %, and Female %
+Detailed club summary matrix with YoY metrics
 
-Page 2: Participants – Year-on-Year Performance
+🏃 Page 2: Participants – Year-on-Year Performance
 
-Purpose: Analyse participation beyond formal club membership.
+![Participants – Year-on-Year Performance](Participants-Page.png)
 
-Key insights:
+This page analyses participants who are not formal club members, providing insight into broader engagement and future membership potential.
 
-Total participants reached 134K
+Key insights include:
 
-Adult participants: 76K
+YoY growth in total participants
 
-Youth participants: 57K
+Adult vs youth participation split
 
-Female participation represents 44% of total participants
+Female participation share
 
-Youth participation represents 43% of total participants
+Variation in participation across clubs and local authorities
 
-Participation levels are highest in major urban local authorities
+Key visuals:
 
-Visuals included:
+KPI cards (Total Participants, Youth %, Female %)
 
-KPI cards for total participants and demographic percentages
-
-Trend analysis showing YoY changes
+Participation trend over time
 
 Participation composition by year
 
 Club-level participation performance
 
-Participation by local authority comparison
+Participation by local authority
 
-Why this matters:
-Participant data provides insight into future membership potential and highlights where engagement strategies may be most effective.
+Core DAX used on this page:
 
-Page 3: Coaches, Capacity & Location – Year-on-Year Analysis
+Aggregated participant measures
 
-Purpose: Assess coaching capacity in relation to participation growth.
+YoY change logic
 
-Key insights:
+Demographic percentage calculations
 
-Total coaches: 2,570
+Core DAX used on this page:
 
-Qualified coaches: 1,263 (49%)
+Year-on-Year calculations
 
-Female coaches represent 29% of the workforce
+Percentage share measures
 
-Coaches-to-members ratio: 0.01
+Previous year comparisons
 
-Coaching capacity is unevenly distributed across local authorities
+🧑‍🏫 Page 3: Coaches, Capacity & Location – Year-on-Year Analysis
 
-Visuals included:
+![Coaches, Capacity & Location – Year-on-Year Analysis](Coaches-Page.png)
 
-KPI cards (Total coaches, Qualified %, Female %)
 
-Coaches by local authority bar chart
+This page focuses on coaching capacity, assessing whether the supply of coaches is keeping pace with participation and membership growth.
+
+Key insights include:
+
+Total coaches and YoY change
+
+Qualified vs unqualified coach split
+
+Female coach representation
+
+Geographic distribution of coaches
+
+Coaches-to-members ratio
+
+Key visuals:
+
+KPI cards (Total Coaches, Qualified %, Female %)
+
+Coaches by local authority
 
 Qualification split over time
 
@@ -112,62 +125,16 @@ Gender balance by region
 
 Coaches per club ranking
 
-Strategic implication:
-While participation and membership are increasing, coaching capacity — particularly qualified and female coaches — may become a limiting factor without targeted development.
+Core DAX used on this page:
 
-🧭 Navigation & User Experience
+Qualification split logic
 
-A dedicated menu page was created using Power BI bookmarks and custom buttons
+Ratio-based measures
 
-Enables intuitive navigation between report sections
+YoY coach growth calculations
 
-Improves usability for non-technical stakeholders
+👤 Author
 
-Creates a professional, application-style experience
-
-🛠️ Data Preparation & Modelling
-
-Data was cleaned and transformed using Power Query
-
-Separate fact tables created for members, participants, and coaches
-
-A lookup table used for club–local authority mapping
-
-Relationships modelled using Club ID and Year
-
-Measures built using DAX for:
-
-Year-on-year analysis
-
-Percentages and ratios
-
-Gender and youth representation
-
-🔎 Data structure note:
-The source data contained multiple row headers, which required restructuring during data preparation. A more standardised, single-header tabular structure would further improve efficiency and data accuracy in future releases.
-
-📈 Key Skills Demonstrated
-
-Power BI data modelling
-
-DAX (YoY calculations, ratios, percentages)
-
-Power Query transformations
-
-Data storytelling for public-sector decision-making
-
-UX design using bookmarks and navigation
-
-Translating raw data into actionable insight
-
-🚀 Future Enhancements
-
-Extend analysis with longer historical time series
-
-Track conversion from participants to members
-
-Introduce age-band segmentation
-
-Benchmark performance against national averages
-
-Add drill-through pages for club-level deep dives
+Neeraj Raj Srinivasa Raju
+Business Intelligence | Data Analytics | Power BI
+📍 UK
