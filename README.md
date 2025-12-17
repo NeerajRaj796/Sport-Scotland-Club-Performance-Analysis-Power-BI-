@@ -1,4 +1,5 @@
 🏅 Sport Scotland, Membership & Coaching Analysis (Power BI)
+
 📌 Project Overview
 
 This project was undertaken as a self-initiated Power BI challenge to deepen my skills in data modelling, DAX calculations, and analytical storytelling using real-world public sector data.
